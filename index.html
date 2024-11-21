@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body class="min-h-100 bg-gray-200">
+    <div class="md:flex min-h-screen  md:align-top">
+        <aside class="bg-teal-600 md:w-2/5 lg:w-2/5 xl:w-1/5 px-5 pt-10 ">
+            <h1 class="text-white font-bold text-2xl mb-10 ">CRM-INDEXEDB</h1>
+            <p class="text-white pb-5 ">Manage your client with CRM-IndexDB</p>
+            <nav class="pb-5 flex flex-col gap-1">
+                <a href="" class="text-white bg-teal-700 py-1 px-2 hover:text-yellow-400" >Client</a>
+                <a href="newClient.html" class="text-white  py-1 px-2 hover:text-yellow-400 hover:bg-teal-800" >New Client</a>
+            </nav>
+        </aside>
+        <main class="md:w-3/5 xl:w-4/5 bg-gray-200 px-5 py-10">
+            <h2 class="text-3xl font-light text-center">Clients</h2>
+            <div class="flex flex-col mt-10">
+                <div class=" overflow-x-auto py-2">
+                    <div class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+                        <table class="min-w-full">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="table-header">Name</th>
+                                    <th class="table-header">Telephone</th>
+                                    <th class="table-header">Company</th>
+                                    <th class="table-header">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="client-list"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
