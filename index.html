@@ -4,22 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRM</title>
+    <title>CRM-IndexDB</title>
     <link rel="stylesheet" href="./css/output.css">
 </head>
 
 <body class="min-h-100 bg-gray-200">
     <div class="md:flex min-h-screen  md:align-top">
-        <aside class="bg-teal-600 md:w-2/5 lg:w-2/5 xl:w-1/5 px-5 pt-10 ">
+        <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-teal-600 px-5 py-10">
             <h1 class="text-white font-bold text-2xl mb-10 ">CRM-INDEXEDB</h1>
-            <p class="text-white pb-5 ">Manage your client with CRM-IndexDB</p>
+            <p class="text-white pb-5 ">Manage your customer with CRM-IndexDB</p>
             <nav class="pb-5 flex flex-col gap-1">
-                <a href="" class="text-white bg-teal-700 py-1 px-2 hover:text-yellow-400" >Client</a>
-                <a href="newClient.html" class="text-white  py-1 px-2 hover:text-yellow-400 hover:bg-teal-800" >New Client</a>
+                <a href="" class="text-white bg-teal-700 py-1 px-2 hover:text-yellow-400" >Customer</a>
+                <a href="newCustomer.html" class="text-white  py-1 px-2 hover:text-yellow-400 hover:bg-teal-800" >New Customer</a>
             </nav>
         </aside>
-        <main class="md:w-3/5 xl:w-4/5 bg-gray-200 px-5 py-10">
-            <h2 class="text-3xl font-light text-center">Clients</h2>
+        <main class="md:w-3/5  xl:w-4/5 px-5 py-10 bg-gray-200">
+            <h2 class="text-3xl font-light text-center">Customers</h2>
             <div class="flex flex-col mt-10">
                 <div class=" overflow-x-auto py-2">
                     <div class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
@@ -32,13 +32,15 @@
                                     <th class="table-header">Actions</th>
                                 </tr>
                             </thead>
-                            <tbody id="client-list"></tbody>
+                            <tbody id="client-list" class="bg-white"></tbody>
                         </table>
                     </div>
                 </div>
             </div>
         </main>
     </div>
+    <script src="./js/index.js"></script>
 </body>
+
 
 </html>
